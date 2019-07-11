@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+   <TextView
+       android:layout_width="250dp"
+       android:layout_height="150dp"
+       android:id="@+id/tv_display_id"
+       android:layout_marginStart="60dp"
+       android:layout_marginTop="25dp"
+
+     />
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:id="@+id/et_enter_amount_id"
+        android:layout_below="@id/tv_display_id"
+        android:hint="Enter Amount"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/text_view_backround"
+        android:paddingRight="30dp"
+        android:paddingLeft="60dp"
+        android:inputType="number"
+        />
+
+
+ <Button
+     android:id="@+id/bt_D_K_id"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/et_enter_amount_id"
+     android:layout_marginStart="40dp"
+     android:layout_marginTop="29dp"
+     android:background="@drawable/button_border"
+     android:onClick="DollarToKshMethod"
+     android:paddingLeft="15dp"
+     android:paddingRight="15dp"
+     android:text="Dollar to ksh"
+
+
+     />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_D_K_id"
+        android:id="@+id/bt_K_D_id"
+        android:text="ksh to dollar"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/button_border"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:onClick="KshToDollarMethod"
+
+
+
+        />
+
+
+    <Button
+        android:id="@+id/bt_E_K_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_enter_amount_id"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="37dp"
+        android:layout_toRightOf="@id/bt_D_K_id"
+        android:background="@drawable/button_border"
+        android:onClick="euroToKshMethod"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:text="euro to ksh" />
+
+
+    <Button
+        android:id="@+id/bt_K_E_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_E_K_id"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/bt_K_D_id"
+        android:background="@drawable/button_border"
+        android:onClick="KshToEuroMethod"
+        android:paddingLeft="25dp"
+        android:paddingRight="30dp"
+        android:text="ksh to euro" />
+
+
+    <Button
+        android:id="@+id/bt_D_E_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_K_D_id"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button_border"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="dollar to euro"
+        android:onClick="dollarToeuroMethod"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_E_D_id"
+        android:text="Euro to Dollar"
+        android:layout_below="@id/bt_K_E_id"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/bt_D_E_id"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/button_border"
+        android:onClick="dollarToEuroMethod"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
